@@ -199,7 +199,7 @@ img{
 
 /* Hero */
 .hero {
-  background: url('img/hero-bg.jpg') no-repeat center center/cover;
+  background: url('') no-repeat center center/cover;
   color: black;
   padding: 6rem 0;
   text-align: center;
@@ -496,7 +496,22 @@ button a{
   height: 88px;
   left: 390px;
 }
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 1100;
+}
 
+.bar {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  display: none;
+}
 /* color variations */
 .card--indigo { --top-color: #2b2b66; }
 .card--ivory  { --top-color: #f0f0f0; color: #111; }
@@ -515,5 +530,17 @@ button a{
   border-radius: 5px;
   transition: 0.3s ease;
 
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20vw;
+}
+.feature-card{
+  width: 85%;
+  height: 50vh;
+}
+.feature-card p{
+  color: #fff;
 }
 }
